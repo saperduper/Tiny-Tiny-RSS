@@ -588,7 +588,7 @@ class Pref_Filters extends Handler_Protected {
 
 		print "<div style='float : right; padding-right : 4px;'>
 			<input dojoType=\"dijit.form.TextBox\" id=\"filter_search\" size=\"20\" type=\"search\"
-				value=\"$filter_search\">
+				value=\"$filter_search\" onkeyup=\"runOnEnter(event, updateFilterList)\">
 			<button dojoType=\"dijit.form.Button\" onclick=\"updateFilterList()\">".
 				__('Search')."</button>
 			</div>";

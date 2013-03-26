@@ -1986,3 +1986,12 @@ function htmlspecialchars_decode (string, quote_style) {
 
   return string;
 }
+ 
+/*
+ Runs the provided function on enter press
+*/
+function runOnEnter(event, func) {
+    if (event.keyCode == 13) {     
+       	func();
+    }
+}

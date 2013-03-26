@@ -1219,7 +1219,7 @@ class Pref_Feeds extends Handler_Protected {
 
 		print "<div style='float : right; padding-right : 4px;'>
 			<input dojoType=\"dijit.form.TextBox\" id=\"feed_search\" size=\"20\" type=\"search\"
-				value=\"$feed_search\">
+				value=\"$feed_search\" onkeyup=\"runOnEnter(event, updateFeedList)\">
 			<button dojoType=\"dijit.form.Button\" onclick=\"updateFeedList()\">".
 				__('Search')."</button>
 			</div>";

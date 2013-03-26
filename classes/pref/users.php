@@ -345,7 +345,7 @@ class Pref_Users extends Handler_Protected {
 
 			print "<div style='float : right; padding-right : 4px;'>
 				<input dojoType=\"dijit.form.TextBox\" id=\"user_search\" size=\"20\" type=\"search\"
-					value=\"$user_search\">
+					value=\"$user_search\" onkeyup=\"runOnEnter(event, updateUsersList)\">
 				<button dojoType=\"dijit.form.Button\" onclick=\"javascript:updateUsersList()\">".
 					__('Search')."</button>
 				</div>";
